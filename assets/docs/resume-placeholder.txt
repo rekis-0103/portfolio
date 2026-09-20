@@ -1,0 +1,21 @@
+===================================================================
+                  RESUME / CV - MAHASISWA IT
+===================================================================
+
+[PANDUAN UNTUK PENGGUNA]:
+Silakan simpan file CV/Resume Anda yang sebenarnya di folder ini:
+  Path: assets/docs/cv-resume.pdf
+
+Setelah Anda menaruh file "cv-resume.pdf" di folder ini, tombol
+"Unduh CV" di halaman portofolio Anda akan langsung mengunduh
+dokumen tersebut secara otomatis!
+
+-------------------------------------------------------------------
+Template Data Ringkas (IT Student):
+- Nama: [Nama Mahasiswa IT]
+- Program Studi: S1 Teknik Informatika / Sistem Informasi
+- Minat: Software Engineering, Web Development, Cloud & AI
+- Email: yourname@student.ac.id
+- LinkedIn: linkedin.com/in/yourprofile
+- GitHub: github.com/yourprofile
+===================================================================

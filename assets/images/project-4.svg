@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p4Dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#0e1726"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" rx="12" fill="url(#p4Dark)" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Titlebar -->
+  <rect width="800" height="38" rx="12" fill="#0f172a"/>
+  <rect y="18" width="800" height="20" fill="#0f172a"/>
+  <circle cx="25" cy="19" r="5" fill="#ef4444" opacity="0.8"/>
+  <circle cx="42" cy="19" r="5" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="59" cy="19" r="5" fill="#10b981" opacity="0.8"/>
+  <rect x="240" y="9" width="320" height="20" rx="4" fill="#090d16" stroke="#1e293b" stroke-width="1"/>
+  <text x="400" y="23" fill="#64748b" font-family="'Fira Code', monospace" font-size="11" text-anchor="middle">ecommerce-go.rekis.dev</text>
+
+  <!-- Split View: React Client on Left, Go REST API on Right -->
+  <!-- Left Side: React Storefront (w=380) -->
+  <g transform="translate(18, 52)">
+    <rect width="374" height="380" rx="8" fill="#0d111d" stroke="#1e293b" stroke-width="1"/>
+    <text x="20" y="32" fill="#61DAFB" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">⚛️ REACT FRONTEND STOREFRONT</text>
+
+    <!-- Product Grid Mini -->
+    <g transform="translate(20, 50)">
+      <!-- Item 1 -->
+      <rect width="160" height="150" rx="6" fill="#151b2d" stroke="#1e293b" stroke-width="1"/>
+      <rect x="15" y="15" width="130" height="65" rx="4" fill="#1e293b"/>
+      <circle cx="80" cy="47" r="18" fill="#61DAFB" fill-opacity="0.2"/>
+      <text x="15" y="98" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Mechanical Keychron</text>
+      <text x="15" y="115" fill="#38bdf8" font-family="'Fira Code', monospace" font-size="10">Rp 1.250.000</text>
+      <rect x="15" y="125" width="130" height="18" rx="3" fill="#0284c7"/>
+      <text x="80" y="137" fill="#ffffff" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" text-anchor="middle">+ Add To Cart</text>
+
+      <!-- Item 2 -->
+      <g transform="translate(174, 0)">
+        <rect width="160" height="150" rx="6" fill="#151b2d" stroke="#1e293b" stroke-width="1"/>
+        <rect x="15" y="15" width="130" height="65" rx="4" fill="#1e293b"/>
+        <circle cx="80" cy="47" r="18" fill="#a855f7" fill-opacity="0.2"/>
+        <text x="15" y="98" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Wireless Headset ANC</text>
+        <text x="15" y="115" fill="#38bdf8" font-family="'Fira Code', monospace" font-size="10">Rp 850.000</text>
+        <rect x="15" y="125" width="130" height="18" rx="3" fill="#0284c7"/>
+        <text x="80" y="137" fill="#ffffff" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" text-anchor="middle">+ Add To Cart</text>
+      </g>
+    </g>
+
+    <!-- Cart State preview -->
+    <g transform="translate(20, 220)">
+      <rect width="334" height="142" rx="6" fill="#131826" stroke="#1e293b" stroke-width="1"/>
+      <text x="15" y="24" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">🛒 Redux Cart &amp; Checkout State</text>
+      <text x="15" y="48" fill="#94a3b8" font-family="'Fira Code', monospace" font-size="10">Total Items: 2 • Total: Rp 2.100.000</text>
+      <text x="15" y="68" fill="#64748b" font-family="'Fira Code', monospace" font-size="9.5">State management: React Hooks / Context API</text>
+      <rect x="15" y="90" width="304" height="34" rx="6" fill="#10b981"/>
+      <text x="167" y="112" fill="#090d16" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Checkout via Go REST API &gt;&gt;</text>
+    </g>
+  </g>
+
+  <!-- Right Side: Go REST API & Gin Router (w=380) -->
+  <g transform="translate(408, 52)">
+    <rect width="374" height="380" rx="8" fill="#06090e" stroke="#1e293b" stroke-width="1"/>
+    <rect width="374" height="28" rx="8" fill="#0b0f19"/>
+    <text x="16" y="18" fill="#00ADD8" font-family="'Fira Code', monospace" font-size="11" font-weight="bold">🐹 GOLANG RESTful BACKEND</text>
+
+    <!-- Code Display -->
+    <g transform="translate(16, 45)" font-family="'Fira Code', monospace" font-size="10.5">
+      <text x="0" y="15" fill="#f43f5e">package <tspan fill="#f8fafc">controllers</tspan></text>
+      <text x="0" y="40" fill="#64748b">// HandleCheckout creates order &amp; deducts stock</text>
+      <text x="0" y="60" fill="#00ADD8">func <tspan fill="#38bdf8">HandleCheckout</tspan><tspan fill="#e2e8f0">(c *gin.Context) {</tspan></text>
+      <text x="15" y="80" fill="#e2e8f0">var req models.CheckoutRequest</text>
+      <text x="15" y="100" fill="#e2e8f0">if err := c.ShouldBindJSON(&amp;req); err != nil {</text>
+      <text x="30" y="120" fill="#e2e8f0">c.JSON(400, gin.H{"error": err.Error()})</text>
+      <text x="30" y="140" fill="#e2e8f0">return</text>
+      <text x="15" y="160" fill="#e2e8f0">}</text>
+      <text x="15" y="185" fill="#10b981">// DB Transaction: ACID compliant</text>
+      <text x="15" y="205" fill="#e2e8f0">order, err := services.CreateOrder(req)</text>
+      <text x="15" y="225" fill="#e2e8f0">c.JSON(201, gin.H{</text>
+      <text x="30" y="245" fill="#38bdf8">"status": "success", "order_id": order.ID,</text>
+      <text x="15" y="265" fill="#e2e8f0">})</text>
+      <text x="0" y="285" fill="#e2e8f0">}</text>
+    </g>
+
+    <g transform="translate(16, 335)">
+      <rect width="165" height="24" rx="4" fill="#00ADD8" fill-opacity="0.15"/>
+      <text x="82" y="16" fill="#00ADD8" font-family="'Fira Code', monospace" font-size="9.5" text-anchor="middle">Gin Router: 0.4ms</text>
+
+      <rect x="175" width="165" height="24" rx="4" fill="#10b981" fill-opacity="0.15"/>
+      <text x="257" y="16" fill="#10b981" font-family="'Fira Code', monospace" font-size="9.5" text-anchor="middle">MySQL ACID: 100%</text>
+    </g>
+  </g>
+</svg>

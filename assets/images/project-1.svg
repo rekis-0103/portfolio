@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p1Dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="p1Accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ADD8"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Frame -->
+  <rect width="800" height="450" rx="12" fill="url(#p1Dark)" stroke="#1e293b" stroke-width="1.5"/>
+  
+  <!-- Window Titlebar -->
+  <rect width="800" height="38" rx="12" fill="#0f172a"/>
+  <rect y="18" width="800" height="20" fill="#0f172a"/>
+  <circle cx="25" cy="19" r="5" fill="#ef4444" opacity="0.8"/>
+  <circle cx="42" cy="19" r="5" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="59" cy="19" r="5" fill="#10b981" opacity="0.8"/>
+  
+  <rect x="240" y="9" width="320" height="20" rx="4" fill="#090d16" stroke="#1e293b" stroke-width="1"/>
+  <text x="400" y="23" fill="#64748b" font-family="'Fira Code', monospace" font-size="11" text-anchor="middle">mypanel-v2.vps.local:8080/dashboard</text>
+  
+  <!-- Sidebar -->
+  <rect x="18" y="52" width="160" height="380" rx="8" fill="#0b0f19" stroke="#1e293b" stroke-width="1"/>
+  <rect x="30" y="70" width="136" height="24" rx="5" fill="#00ADD8" fill-opacity="0.15" stroke="#00ADD8" stroke-width="0.8"/>
+  <text x="42" y="86" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">⚡ Servers (3)</text>
+  
+  <text x="42" y="125" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">📊 System Metrics</text>
+  <text x="42" y="155" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">🐳 Docker Instances</text>
+  <text x="42" y="185" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">📁 File Manager</text>
+  <text x="42" y="215" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">🛡️ Firewall &amp; Ports</text>
+  <text x="42" y="245" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">⚙️ Daemon Settings</text>
+
+  <!-- Main Content Dashboard -->
+  <g transform="translate(194, 52)">
+    <!-- Header status -->
+    <rect width="588" height="60" rx="8" fill="#0d111d" stroke="#1e293b" stroke-width="1"/>
+    <circle cx="25" cy="30" r="5" fill="#10b981"/>
+    <text x="40" y="34" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Linux VPS Daemon (Go 1.22)</text>
+    <text x="400" y="34" fill="#64748b" font-family="'Fira Code', monospace" font-size="11">Uptime: 24d 14h • RAM: 4.8 / 16 GB</text>
+
+    <!-- 3 Cards -->
+    <g transform="translate(0, 75)">
+      <!-- Card 1 -->
+      <rect width="186" height="110" rx="8" fill="#0d111d" stroke="#1e293b" stroke-width="1"/>
+      <text x="16" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Server #1: Survival SMP</text>
+      <text x="16" y="58" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="18" font-weight="bold">PaperMC 1.20</text>
+      <rect x="16" y="74" width="70" height="18" rx="4" fill="#10b981" fill-opacity="0.15"/>
+      <text x="51" y="87" fill="#34d399" font-family="'Fira Code', monospace" font-size="10" font-weight="600" text-anchor="middle">ONLINE</text>
+      <text x="100" y="87" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">18/40 Players</text>
+
+      <!-- Card 2 -->
+      <g transform="translate(201, 0)">
+        <rect width="186" height="110" rx="8" fill="#0d111d" stroke="#1e293b" stroke-width="1"/>
+        <text x="16" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Server #2: Minigames</text>
+        <text x="16" y="58" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="18" font-weight="bold">PurpurMC</text>
+        <rect x="16" y="74" width="70" height="18" rx="4" fill="#10b981" fill-opacity="0.15"/>
+        <text x="51" y="87" fill="#34d399" font-family="'Fira Code', monospace" font-size="10" font-weight="600" text-anchor="middle">ONLINE</text>
+        <text x="100" y="87" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">32/100 Players</text>
+      </g>
+
+      <!-- Card 3 -->
+      <g transform="translate(402, 0)">
+        <rect width="186" height="110" rx="8" fill="#0d111d" stroke="#1e293b" stroke-width="1"/>
+        <text x="16" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">CPU &amp; Memory Realtime</text>
+        <text x="16" y="58" fill="#00ADD8" font-family="system-ui, sans-serif" font-size="18" font-weight="bold">14.2% Load</text>
+        <text x="16" y="87" fill="#94a3b8" font-family="'Fira Code', monospace" font-size="10">PostgreSQL 16 synced</text>
+      </g>
+    </g>
+
+    <!-- Terminal Box -->
+    <g transform="translate(0, 200)">
+      <rect width="588" height="180" rx="8" fill="#06090e" stroke="#1e293b" stroke-width="1"/>
+      <rect width="588" height="26" rx="8" fill="#0b0f19"/>
+      <rect y="14" width="588" height="12" fill="#0b0f19"/>
+      <text x="15" y="17" fill="#64748b" font-family="'Fira Code', monospace" font-size="10">Live Console &amp; Docker Daemon Logs</text>
+      
+      <g font-family="'Fira Code', monospace" font-size="10.5">
+        <text x="15" y="48" fill="#38bdf8">[INFO] [daemon-core] Initialized Go WebSocket router on :8080</text>
+        <text x="15" y="68" fill="#94a3b8">[INFO] [docker-bridge] Attached container mc-node-production [id: 7f93a2b1]</text>
+        <text x="15" y="88" fill="#10b981">[SUCCESS] Authenticated remote control session via JWT Bearer token</text>
+        <text x="15" y="108" fill="#e2e8f0">[CONSOLE: Survival] Server thread/INFO: Done (3.842s)! For help, type "help"</text>
+        <text x="15" y="128" fill="#38bdf8">[METRIC] Heartbeat OK - RTT 1.2ms - CPU avg: 14.2% - Mem: 4,812MB</text>
+        <text x="15" y="148" fill="#00ADD8">mypanel-daemon&gt; _</text>
+      </g>
+    </g>
+  </g>
+</svg>

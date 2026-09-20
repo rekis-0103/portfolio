@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cpDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#0f1828"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Window Frame -->
+  <rect width="800" height="450" rx="12" fill="url(#cpDark)" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Titlebar -->
+  <rect width="800" height="38" rx="12" fill="#0f172a"/>
+  <rect y="18" width="800" height="20" fill="#0f172a"/>
+  <circle cx="25" cy="19" r="5" fill="#ef4444" opacity="0.8"/>
+  <circle cx="42" cy="19" r="5" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="59" cy="19" r="5" fill="#10b981" opacity="0.8"/>
+  <rect x="240" y="9" width="320" height="20" rx="4" fill="#090d16" stroke="#1e293b" stroke-width="1"/>
+  <text x="400" y="23" fill="#64748b" font-family="'Fira Code', monospace" font-size="11" text-anchor="middle">company-portal.local/e-recruitment</text>
+
+  <!-- Sub Navigation -->
+  <rect x="18" y="52" width="764" height="44" rx="6" fill="#0d111d" stroke="#1e293b" stroke-width="1"/>
+  <text x="36" y="78" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">CORP ENTERPRISE <tspan fill="#64748b" font-size="11" font-weight="normal">| Company Profile &amp; E-Recruitment Portal</tspan></text>
+  <rect x="670" y="60" width="96" height="28" rx="4" fill="#0284c7"/>
+  <text x="718" y="77" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">HR Admin &gt;</text>
+
+  <!-- Left: Company Profile & Job Listing -->
+  <g transform="translate(18, 108)">
+    <rect width="374" height="324" rx="8" fill="#0d111d" stroke="#1e293b" stroke-width="1"/>
+    <text x="20" y="30" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">💼 PORTAL KARIR &amp; PROFIL PERUSAHAAN</text>
+    
+    <!-- Job Card 1 -->
+    <g transform="translate(20, 50)">
+      <rect width="334" height="75" rx="6" fill="#141c2e" stroke="#1e293b" stroke-width="1"/>
+      <text x="16" y="25" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Junior Backend Developer</text>
+      <text x="16" y="44" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Divisi Teknologi • Full-Time • Onsite / Hybrid</text>
+      <rect x="16" y="52" width="50" height="16" rx="3" fill="#38bdf8" fill-opacity="0.15"/>
+      <text x="41" y="64" fill="#38bdf8" font-family="'Fira Code', monospace" font-size="8.5" text-anchor="middle">PHP/Go</text>
+      <rect x="72" width="60" height="16" rx="3" fill="#10b981" fill-opacity="0.15"/>
+      <text x="102" y="64" fill="#10b981" font-family="'Fira Code', monospace" font-size="8.5" text-anchor="middle">MySQL</text>
+      <rect x="255" y="46" width="65" height="22" rx="4" fill="#0284c7"/>
+      <text x="287" y="60" fill="#ffffff" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Lamar</text>
+    </g>
+
+    <!-- Job Card 2 -->
+    <g transform="translate(20, 138)">
+      <rect width="334" height="75" rx="6" fill="#141c2e" stroke="#1e293b" stroke-width="1"/>
+      <text x="16" y="25" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">IT Support &amp; Network Specialist</text>
+      <text x="16" y="44" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Divisi Infrastruktur • Full-Time</text>
+      <rect x="16" y="52" width="70" height="16" rx="3" fill="#a855f7" fill-opacity="0.15"/>
+      <text x="51" y="64" fill="#c084fc" font-family="'Fira Code', monospace" font-size="8.5" text-anchor="middle">Networking</text>
+      <rect x="255" y="46" width="65" height="22" rx="4" fill="#0284c7"/>
+      <text x="287" y="60" fill="#ffffff" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Lamar</text>
+    </g>
+
+    <!-- Stats summary -->
+    <g transform="translate(20, 230)">
+      <rect width="334" height="76" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1"/>
+      <text x="16" y="25" fill="#64748b" font-family="'Fira Code', monospace" font-size="10">Fitur E-Recruitment:</text>
+      <text x="16" y="45" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10.5">• Pendaftaran Pelamar &amp; Upload CV PDF Otomatis</text>
+      <text x="16" y="65" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10.5">• Notifikasi Status Seleksi (Administrasi, Wawancara)</text>
+    </g>
+  </g>
+
+  <!-- Right: E-Recruitment HR Admin Pipeline -->
+  <g transform="translate(408, 108)">
+    <rect width="374" height="324" rx="8" fill="#0d111d" stroke="#1e293b" stroke-width="1"/>
+    <text x="20" y="30" fill="#10b981" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">📊 PIPELINE REKRUTMEN HR (ADMIN DASHBOARD)</text>
+
+    <!-- Candidate 1 -->
+    <g transform="translate(20, 50)">
+      <rect width="334" height="60" rx="6" fill="#141c2e" stroke="#1e293b" stroke-width="1"/>
+      <circle cx="30" cy="30" r="14" fill="#38bdf8" fill-opacity="0.2"/>
+      <text x="30" y="34" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">AP</text>
+      <text x="56" y="26" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">Aditya Pratama</text>
+      <text x="56" y="42" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9.5">Posisi: Junior Backend • Skor CV: 92%</text>
+      <rect x="235" y="20" width="85" height="20" rx="4" fill="#10b981" fill-opacity="0.15"/>
+      <text x="277" y="34" fill="#10b981" font-family="'Fira Code', monospace" font-size="9" font-weight="bold" text-anchor="middle">Wawancara</text>
+    </g>
+
+    <!-- Candidate 2 -->
+    <g transform="translate(20, 120)">
+      <rect width="334" height="60" rx="6" fill="#141c2e" stroke="#1e293b" stroke-width="1"/>
+      <circle cx="30" cy="30" r="14" fill="#a855f7" fill-opacity="0.2"/>
+      <text x="30" y="34" fill="#a855f7" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">SL</text>
+      <text x="56" y="26" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">Siti Lestari</text>
+      <text x="56" y="42" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9.5">Posisi: IT Support • Skor CV: 88%</text>
+      <rect x="235" y="20" width="85" height="20" rx="4" fill="#f59e0b" fill-opacity="0.15"/>
+      <text x="277" y="34" fill="#f59e0b" font-family="'Fira Code', monospace" font-size="9" font-weight="bold" text-anchor="middle">Review Berkas</text>
+    </g>
+
+    <!-- Candidate 3 -->
+    <g transform="translate(20, 190)">
+      <rect width="334" height="60" rx="6" fill="#141c2e" stroke="#1e293b" stroke-width="1"/>
+      <circle cx="30" cy="30" r="14" fill="#10b981" fill-opacity="0.2"/>
+      <text x="30" y="34" fill="#10b981" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">RW</text>
+      <text x="56" y="26" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">Rizky Wahyudi</text>
+      <text x="56" y="42" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9.5">Posisi: Web Developer • Skor CV: 95%</text>
+      <rect x="235" y="20" width="85" height="20" rx="4" fill="#10b981" fill-opacity="0.15"/>
+      <text x="277" y="34" fill="#10b981" font-family="'Fira Code', monospace" font-size="9" font-weight="bold" text-anchor="middle">Wawancara</text>
+    </g>
+
+    <!-- Bottom Meta -->
+    <g transform="translate(20, 265)">
+      <rect width="334" height="42" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1"/>
+      <text x="16" y="26" fill="#38bdf8" font-family="'Fira Code', monospace" font-size="9.5">Stack: PHP • MySQL • Relasi Kandidat &amp; Lowongan</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p6Dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#0e1726"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" rx="12" fill="url(#p6Dark)" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Titlebar -->
+  <rect width="800" height="38" rx="12" fill="#0f172a"/>
+  <rect y="18" width="800" height="20" fill="#0f172a"/>
+  <circle cx="25" cy="19" r="5" fill="#ef4444" opacity="0.8"/>
+  <circle cx="42" cy="19" r="5" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="59" cy="19" r="5" fill="#10b981" opacity="0.8"/>
+  <rect x="240" y="9" width="320" height="20" rx="4" fill="#090d16" stroke="#1e293b" stroke-width="1"/>
+  <text x="400" y="23" fill="#64748b" font-family="'Fira Code', monospace" font-size="11" text-anchor="middle">github.com/rekis-0103/ticketing-mobile</text>
+
+  <!-- Content -->
+  <!-- Left: Mobile Device Mockup (Flutter) -->
+  <g transform="translate(100, 52)">
+    <rect width="200" height="375" rx="30" fill="#0b0f19" stroke="#334155" stroke-width="3"/>
+    <rect x="5" y="5" width="190" height="365" rx="26" fill="#040711"/>
+    
+    <!-- Notch -->
+    <rect x="65" y="12" width="60" height="14" rx="7" fill="#0b0f19"/>
+    
+    <!-- App UI -->
+    <text x="20" y="50" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">Event Tickets</text>
+    
+    <!-- Ticket Card -->
+    <rect x="15" y="65" width="160" height="90" rx="10" fill="#0284c7"/>
+    <text x="25" y="88" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">Tech Summit 2026</text>
+    <text x="25" y="104" fill="#e0f2fe" font-family="system-ui, sans-serif" font-size="9">President University Hall</text>
+    <rect x="25" y="118" width="80" height="20" rx="4" fill="#ffffff" fill-opacity="0.2"/>
+    <text x="65" y="132" fill="#ffffff" font-family="'Fira Code', monospace" font-size="9" text-anchor="middle">QR #T9821</text>
+
+    <!-- Event 2 -->
+    <rect x="15" y="168" width="160" height="75" rx="10" fill="#131826" stroke="#1e293b" stroke-width="1"/>
+    <text x="25" y="190" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Cyber Sec Workshop</text>
+    <text x="25" y="206" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8.5">Hands-on CTF &amp; Pentest</text>
+    <text x="25" y="226" fill="#38bdf8" font-family="'Fira Code', monospace" font-size="9">Rp 50.000 • Confirmed</text>
+
+    <!-- Bottom Bar -->
+    <rect x="15" y="320" width="160" height="34" rx="17" fill="#0d111d"/>
+    <circle cx="45" cy="337" r="5" fill="#0284c7"/>
+    <circle cx="80" cy="337" r="5" fill="#475569"/>
+    <circle cx="115" cy="337" r="5" fill="#475569"/>
+    <circle cx="145" cy="337" r="5" fill="#475569"/>
+  </g>
+
+  <!-- Right: Architecture Details -->
+  <g transform="translate(340, 65)">
+    <rect width="420" height="345" rx="8" fill="#0d111d" stroke="#1e293b" stroke-width="1"/>
+    <text x="25" y="38" fill="#02569B" font-family="system-ui, sans-serif" font-size="15" font-weight="bold">💙 FLUTTER &amp; DART TICKETING ENGINE</text>
+    <text x="25" y="62" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Aplikasi reservasi tiket mobile dengan transisi UI mulus dan integrasi state management.</text>
+    
+    <g transform="translate(25, 85)" font-family="'Fira Code', monospace" font-size="10.5">
+      <rect width="370" height="150" rx="6" fill="#06090e" stroke="#1e293b" stroke-width="1"/>
+      <text x="15" y="24" fill="#0284c7">class <tspan fill="#f8fafc">TicketBloc</tspan> <tspan fill="#f43f5e">extends</tspan> <tspan fill="#38bdf8">Bloc&lt;TicketEvent, TicketState&gt;</tspan> {</text>
+      <text x="15" y="48" fill="#64748b">// Handles booking lifecycle &amp; QR verification</text>
+      <text x="15" y="72" fill="#f8fafc">TicketBloc() : super(TicketInitial()) {</text>
+      <text x="30" y="96" fill="#f8fafc">on&lt;<tspan fill="#38bdf8">ConfirmBooking</tspan>&gt;((event, emit) async {</text>
+      <text x="45" y="120" fill="#10b981">emit(TicketBookingSuccess(event.ticketId));</text>
+      <text x="30" y="136" fill="#f8fafc">});</text>
+      <text x="15" y="148" fill="#f8fafc">}</text>
+    </g>
+
+    <g transform="translate(25, 255)">
+      <text x="0" y="20" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Teknologi &amp; Fitur:</text>
+      <g transform="translate(0, 32)">
+        <rect width="90" height="24" rx="4" fill="#02569B" fill-opacity="0.2"/>
+        <text x="45" y="16" fill="#38bdf8" font-family="'Fira Code', monospace" font-size="9.5" text-anchor="middle">Flutter 3.x</text>
+
+        <rect x="98" width="70" height="24" rx="4" fill="#02569B" fill-opacity="0.2"/>
+        <text x="133" y="16" fill="#38bdf8" font-family="'Fira Code', monospace" font-size="9.5" text-anchor="middle">Dart</text>
+
+        <rect x="176" width="100" height="24" rx="4" fill="#10b981" fill-opacity="0.2"/>
+        <text x="226" y="16" fill="#10b981" font-family="'Fira Code', monospace" font-size="9.5" text-anchor="middle">BLoC Pattern</text>
+
+        <rect x="284" width="85" height="24" rx="4" fill="#a855f7" fill-opacity="0.2"/>
+        <text x="326" y="16" fill="#c084fc" font-family="'Fira Code', monospace" font-size="9.5" text-anchor="middle">REST API</text>
+      </g>
+    </g>
+  </g>
+</svg>
